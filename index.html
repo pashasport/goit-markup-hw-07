@@ -8,9 +8,11 @@
     rel="stylesheet"> 
    <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    
+    <link rel="stylesheet" href="./css/adaptivestyles.css" />
+    <link rel="stylesheet" href="./css/mobile-menu.css" />
   </head>
-  <body>
+  <body >
     <header class="page-nav">
       <div class="conteiner main-nav">
           <nav class="main-nav">
@@ -22,7 +24,8 @@
               <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
               <li class="item"><a href="" class="link">Contacts</a></li>
             </ul>
-          </nav>            
+          </nav> 
+                   
         <address class="auth">
           <ul class="mail list">
             <li class="item">
@@ -33,17 +36,49 @@
             </li>
           </ul>
         </address>
+        <!-- modal-mobile -->
+        <button type="button" class="open-burger "><!--js-open-menu-->
+            <svg class="open-menu-icon" width="32" height="22">
+              <use href="./images/sprite.svg#icon-menu-burger"></use>
+            </svg>
+          </button>  
       </div> 
+       <div class="mobile-menu is-open" id="mobile-menu-list"> <!--js-menu-container-->
+        <div class="conteiner mobile-menu-conteiner">
+            <button class="mobile-close-button "><!--js-close-menu-->
+           <svg class="mobile-close-icon" width="8" height="8">
+            <use href="./images/sprite.svg#icon-modal-close"></use>
+           </svg>
+          </button>
+          <div class="mobile-nav">
+          <ul class="mobile-menu-nav list">
+            <li class="mobile-item"><a href="./index.html" class="mobile-link">Studio</a></li>
+            <li class="mobile-item"><a href="./portfolio.html" class="mobile-link">Portfolio</a></li>
+            <li class="mobile-item"><a href="" class="mobile-link">Contacts</a></li>
+          </ul>
+          </div>
+          <div class="mobile-auth">
+           <ul class="mobile-auth-mail list">
+            <li class="mobile-mail-item">
+              <a href="mailto:info@devstudio.com" class="mail-auth-link">info@devstudio.com</a>
+            </li>
+            <li class="mobile-number-item">
+              <a href="tel:+110001111111" class="number-auth-link">+11 (000) 111-11-11</a>
+            </li>
+           </ul>
+        </div>
+        </div>
+       </div>
     </header>
     <main>
-      <section class="hero-section">
+       <section class="hero-section is-hidden">
         <div class="conteiner">  
           <h1 class="hero-text">Effective Solutions <br/> for Your Business</h1>
           <button type="button" class="button-primary" data-modal-open>Order Service</button>
         </div>
       </section>
       <!--section1-->
-      <section class="section-top list">
+       <section class="section-top list">
           <div class="conteiner">
            <h2 class="hide-title">Advances</h2>                      
            <ul class="section-text list">
@@ -105,9 +140,9 @@
               </li>
             </ul>
           </div> 
-      </section>
+      </section> 
       <!--section2-->
-      <section class="img-section">
+      <!-- <section class="img-section">
         <div class="conteiner">
           <h2 class="title">What are we doing</h2>
         <ul class="img-list list">
@@ -122,9 +157,9 @@
           </li>
         </ul>
         </div>
-      </section>
+      </section> -->
       <!--SECTION3-->       
-      <section class="section-team">
+      <!-- <section class="section-team">
         <div class="conteiner">
           <h2 class="title">Our Team</h2>
           <ul class="card-team list">
@@ -286,9 +321,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--SECTION4-->
-      <section class="section-customer">
+      <!-- <section class="section-customer">
         <div class="conteiner">
           <h2 class="title">Customers</h2> 
           <ul class="customers-list list">
@@ -336,9 +371,9 @@
             </li>
           </ul>            
         </div>   
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
      <div class="foot-media conteiner">
       <div class="footer-box">
       <a href="./index.html" class="logo">
@@ -397,17 +432,17 @@
       </div>
      </form>
      </div>
-    </footer>
+    </footer> -->
     <!--modal-->
-    <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/sprite.svg#icon-modal-close"></use>
           </svg>
-        </button>
+        </button> 
     <!--Form-->
-        <p class="title-form">Leave your contacts and we will call you back</p>
+        <!-- <p class="title-form">Leave your contacts and we will call you back</p>
         <form class="modal-form" autocomplete="off">
         
           <label class="form-lable">
@@ -460,12 +495,11 @@
          <button type="submit" class="modal-form-button">Send</button>
        
 
-        </form> 
-      
-
+        </form>  -->
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+     <!-- <script src="./js/mobile-menu.js"></script>  -->
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
          
