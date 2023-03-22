@@ -46,6 +46,9 @@
     padding: 0;
     line-height: 0;
   }
+.nav-list{
+  display:none;
+}
 .mobile-close-button{
   position: absolute;
    top: 24px;
@@ -73,14 +76,7 @@ padding-left: 40px;
 .logo{
     line-height: 1.16
 }
-.mobile-auth-mail{
-  display: flex;
-  flex-direction: column-reverse;
-  
-}
-.mobile-auth{
- margin-top: auto; 
-}
+
 .mobile-item{
  text-decoration: none;
   font-style: normal;
@@ -96,9 +92,26 @@ color: var(--background-button-color);
 } 
 
 .hero-section .hero-text{
-    margin-bottom: 72px;
-    font-size: 36px;   
-    line-height: 1.11;
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+}
+.mobile-auth-mail{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.mobile-auth{
+ margin-top: auto; 
+}
+.mobile-mail-item{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.mobile-number-item{
+  font-weight: 600;
+font-size: 36px;
+line-height: 1.11;
 }
 .hero-section{
     background-image: linear-gradient( rgba(46, 47, 66, 0.7),
