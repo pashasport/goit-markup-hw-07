@@ -8,9 +8,16 @@
     rel="stylesheet"> 
    <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/adaptivestyles.css" />
     <link rel="stylesheet" href="./css/mobile-menu.css" />
+    <link rel="stylesheet" href="./css/tablet-style.css" />
+    <link rel="stylesheet" href="./css/new-style.css" />
   </head>
   <body >
     <header class="page-nav">
@@ -24,8 +31,7 @@
               <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
               <li class="item"><a href="" class="link">Contacts</a></li>
             </ul>
-          </nav> 
-                   
+          </nav>      
         <address class="auth">
           <ul class="mail list">
             <li class="item">
@@ -36,39 +42,70 @@
             </li>
           </ul>
         </address>
-        <!-- modal-mobile -->
+        <!--mobile-button -->
         <button type="button" class="open-burger js-open-menu">
-            <svg class="open-menu-icon" width="32" height="22">
-              <use href="./images/sprite.svg#icon-menu-burger"></use>
-            </svg>
-          </button>  
+          <svg class="open-menu-icon" width="32" height="22">
+            <use href="./images/sprite.svg#icon-menu-burger"></use>
+          </svg>
+        </button>  
       </div> 
-       <div class="mobile-menu js-menu-container" id="mobile-menu-list"> 
+       <!--mobile-menu-->  
+      <div class="mobile-menu js-menu-container"> 
         <div class="conteiner mobile-menu-conteiner">
             <button class="mobile-close-button js-close-menu">
-           <svg class="mobile-close-icon" width="8" height="8">
-            <use href="./images/sprite.svg#icon-modal-close"></use>
-           </svg>
-          </button>
-          <div class="mobile-nav">
-          <ul class="mobile-menu-nav list">
-            <li class="mobile-item"><a href="./index.html" class="mobile-link">Studio</a></li>
-            <li class="mobile-item"><a href="./portfolio.html" class="mobile-link">Portfolio</a></li>
-            <li class="mobile-item"><a href="" class="mobile-link">Contacts</a></li>
-          </ul>
-          </div>
+              <svg class="mobile-close-icon" width="8" height="8">
+                <use href="./images/sprite.svg#icon-modal-close"></use>
+              </svg>
+            </button>
+           <div class="mobile-nav">
+             <ul class="mobile-menu-nav list">
+                <li class="mobile-item"><a href="./index.html" class="mob-link link">Studio</a></li>
+                <li class="mobile-item"><a href="./portfolio.html" class="mob-link link">Portfolio</a></li>
+                <li class="mobile-item"><a href="" class="mob-nav-link link">Contacts</a></li>
+             </ul>
+           </div>
           <div class="mobile-auth">
-           <ul class="mobile-auth-mail list">
-            <li class="mobile-mail-item">
-              <a href="mailto:info@devstudio.com" class="mail-auth-link">info@devstudio.com</a>
-            </li>
-            <li class="mobile-number-item">
-              <a href="tel:+110001111111" class="number-auth-link">+11 (000) 111-11-11</a>
-            </li>
-           </ul>
+            <ul class="mobile-auth-mail list">
+              <li class="mobile-mail-item">
+                <a href="mailto:info@devstudio.com" class="mail-auth-link decor">info@devstudio.com</a>
+              </li>
+              <li class="mobile-number-item">
+                <a href="tel:+110001111111" class="number-auth-link decor">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+            <ul class="mob-social-list list">
+             <li class="mob-team-social">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+             </li>
+             <li class="team-social">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+             </li>
+             <li class="team-social">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+             </li>
+             <li class="team-social">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+             </li>
+            </ul>
+          </div>
         </div>
-        </div>
-       </div>
+      </div>
     </header>
     <main>
        <section class="hero-section is-hidden">
@@ -142,30 +179,38 @@
           </div> 
       </section> 
       <!--section2-->
-      <!-- <section class="img-section">
+     <section class="img-section">
         <div class="conteiner">
           <h2 class="title">What are we doing</h2>
         <ul class="img-list list">
           <li class="item">
-            <img src="./images/img1.jpg" alt="computer screen" width="360" />
+            <img 
+            srcset="./images/img1@2x.jpg 2x"
+            src="./images/img1.jpg" alt="computer screen" width="360" />
           </li>
           <li class="item">
-            <img src="./images/img3.jpg" alt="computer and phone" width="360" />
+            <img 
+            srcset="./images/img2@2x.jpg 2x"
+            src="./images/img3.jpg" alt="computer and phone" width="360" />
           </li>
           <li class="item">
-            <img src="./images/img2.jpg" alt="layers on screen" width="360" />
+            <img 
+            srcset="./images/img3@2x.jpg 2x"
+            src="./images/img2.jpg" alt="layers on screen" width="360" />
           </li>
         </ul>
         </div>
-      </section> -->
+     </section> 
       <!--SECTION3-->       
-      <!-- <section class="section-team">
+     <section class="section-team">
         <div class="conteiner">
           <h2 class="title">Our Team</h2>
           <ul class="card-team list">
             <li class="item">
               <div class="card">            
-                <img class="" src="./images/imgt1.jpg" alt="Mark Guerrero" width="264" />
+                <img class="" 
+                srcset="./images.mob/team1@2x.jpg 2x"
+                src="./images/imgt1.jpg" alt="Mark Guerrero" width="264" />
                 <div class="team-text">
                 <h3 class="subtitle">Mark Guerrero</h3>
                 <p class="text">Product Designer</p>
@@ -204,7 +249,9 @@
             </li>
             <li class="item"> 
               <div class="card">            
-                <img class="" src="./images/imgt2.jpg" alt="Tom Ford" width="264"  />
+                <img class="" 
+                srcset="./images.mob/team2@2x.jpg 2x"
+                src="./images/imgt2.jpg" alt="Tom Ford" width="264"  />
                 <div class="team-text">
                 <h3 class="subtitle">Tom Ford</h3>
                 <p class="text">Frontend Developer</p> 
@@ -243,7 +290,9 @@
             </li>
             <li class="item">
               <div class="card">             
-                <img class="" src="./images/imgt3.jpg" alt="Camila Garcia" width="264"  />
+                <img class="" 
+                srcset="./images.mob/team3@2x.jpg 2x"
+                src="./images/imgt3.jpg" alt="Camila Garcia" width="264"  />
                 <div class="team-text">
                 <h3 class="subtitle">Camila Garcia</h3>
                 <p class="text">Marketing</p>
@@ -282,7 +331,9 @@
             </li>
             <li class="item"> 
               <div class="card">            
-                <img class="" src="./images/imgt4.jpg" alt="Daniel Wilson" width="264"  />
+                <img class="" 
+                srcset="./images.mob/team4@2x.jpg 2x"
+                src="./images/imgt4.jpg" alt="Daniel Wilson" width="264"  />
                 <div class="team-text">
                 <h3 class="subtitle">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
@@ -321,9 +372,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+    </section> 
       <!--SECTION4-->
-      <!-- <section class="section-customer">
+      <section class="section-customer">
         <div class="conteiner">
           <h2 class="title">Customers</h2> 
           <ul class="customers-list list">
@@ -371,9 +422,9 @@
             </li>
           </ul>            
         </div>   
-      </section> -->
+      </section> 
     </main>
-    <!-- <footer class="footer">
+     <footer class="footer">
      <div class="foot-media conteiner">
       <div class="footer-box">
       <a href="./index.html" class="logo">
@@ -432,7 +483,7 @@
       </div>
      </form>
      </div>
-    </footer> -->
+    </footer> 
     <!--modal-->
      <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -442,7 +493,7 @@
           </svg>
         </button> 
     <!--Form-->
-        <!-- <p class="title-form">Leave your contacts and we will call you back</p>
+        <p class="title-form">Leave your contacts and we will call you back</p>
         <form class="modal-form" autocomplete="off">
         
           <label class="form-lable">
@@ -495,11 +546,11 @@
          <button type="submit" class="modal-form-button">Send</button>
        
 
-        </form>  -->
+        </form> 
       </div>
     </div>
      <script src="./js/mobile-menu.js"></script> 
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
          
