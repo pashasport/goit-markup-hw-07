@@ -52,13 +52,7 @@ body {
   } */
   
    /* for header section address */ 
-  /* .conteiner{
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  } */
+ 
   .conteiner{
     width: 100%;
     padding-left: 15px;
@@ -334,7 +328,6 @@ body {
   .card-img .card-portfolio {
     display: block;
     text-decoration: none;
-    border: 1px sol;
     transition: box-shadow var(--transition-dur-fun);
   }
   .chapter .card-portfolio:hover,
@@ -516,7 +509,7 @@ body {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 110px;
+    padding-bottom: 120px;
     padding-top: 120px;
     background-color: var(--main-bground-color);
   }

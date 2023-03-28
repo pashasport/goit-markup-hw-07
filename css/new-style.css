@@ -20,7 +20,14 @@
     .page-nav{
         padding-bottom: 0;
     }
-
+    /* ----for portfolio--- */
+    .button-list {
+        justify-content: center; 
+      }
+      .card-img{
+         gap: 48px 24px;  
+      }
+     
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) ,
 screen and (min-resolution: 192dpi) and (min-width: 1200px),

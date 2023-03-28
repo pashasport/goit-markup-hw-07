@@ -12,10 +12,11 @@ margin-top: 4px;
 .hero-section{
     max-width: 768px;
     max-height: 436px;
+    padding-top: 112px;
+    padding-bottom: 108px;
     background-image: linear-gradient( rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7) ), 
     url(../images.tablet/tabl-dark-bg.jpg);
-   
 }
 .hero-section .hero-text{
  margin-bottom: 40px;   
@@ -40,6 +41,9 @@ margin-top: 4px;
 }
 .section-text .item:nth-child(-n+2){
     margin-bottom: 72px;
+}
+.section-text .item:nth-child(2n + 1){
+    margin-right: 24px;
 }
 .img-section{
     display: none;
@@ -68,6 +72,10 @@ margin-top: 4px;
     margin-left: auto;
     margin-right: auto;
 }
+.section-customer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 .logo-list{
     margin-right: 24px;
     margin-bottom: 72px;
@@ -95,6 +103,26 @@ margin-top: 4px;
     max-width: calc(552px + (15px *2));
     margin-right: auto;
     margin-left: auto;
+}
+.footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+/* ------for portfolio----*/
+.button-list {
+     justify-content: center; 
+  }
+  .card-img{
+    
+    gap: 72px 24px;
+  }
+  .chapter {
+    width: 356px;
+  }
+  .section-portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    /* background-color: aqua; */
 }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px) ,
