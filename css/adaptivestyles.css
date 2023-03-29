@@ -93,10 +93,10 @@ body {
       display: none;
     }
   }
-  .page-nav{
-    padding-top: 24px;
+  /* .page-nav{
+    padding-top: 24px; 
     padding-bottom: 24px;
-  }
+  } */
   .main-nav{
     display: flex;
     align-items: center;
@@ -239,8 +239,11 @@ body {
   /* ----------------text for hero section -------------*/
   .hero-section .hero-text{
     margin: 0;
+    text-align: center;
     margin-bottom: 48px;
-  
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 496px;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -783,7 +786,7 @@ body {
       box-shadow var(--transition-dur-fun),
       opacity var(--transition-dur-fun);
       width: 408px;
-      height: 584px;
+      /* height: 584px; */
       background-color: var(--modal-background);
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 4px;

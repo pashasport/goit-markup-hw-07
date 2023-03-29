@@ -84,6 +84,10 @@ padding-right: 0px;
 .mobile-auth{
 margin-top: auto;
 } 
+ .page-nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+} 
 .logo{
     line-height: 1.16
 }
@@ -143,8 +147,9 @@ color:var(--main-color)
 }
  .mob-social-list{
   display:flex;
-  max-width: 328px;
-  justify-content: space-between;
+  /* max-width: 328px;
+  justify-content: space-between; */
+  gap: 56px;
   margin-top: 48px;
 } 
 .social-list {
@@ -165,6 +170,9 @@ margin-bottom: 72px;
      border: 1px solid #000000;
      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.hero-section .hero-text{
+  max-width: 320px;
+} 
 .hero-section{
   padding-top: 112px;
   padding-bottom: 112px;
@@ -176,11 +184,10 @@ margin-bottom: 72px;
   margin-left: 0;
 } 
 .section-text .subtitle {
-  display: flex;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  justify-content: center;
 }
 .section-top {
   padding-top: 96px;
@@ -313,6 +320,25 @@ justify-content: space-between;
   overflow-y: scroll;
 } */
   }
+  @media screen and (max-width: 375px){
+    .number-auth-link {
+      font-size: 27px;
+    }
+    .mob-social-list {
+      gap: 28px;
+    }
+    /* .form-lable.textarea {
+      margin-bottom: 8px;
+  }
+.modal-form-checkbox {
+    margin-bottom: 8px;
+  }
+  .modal-form-button {
+    padding: 12px 26px;
+    min-width: 169px; */
+    .modal  {
+      min-height: 584px ;
+    }
   
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px) ,
    screen and (min-resolution: 192dpi) and (max-width: 767px),
